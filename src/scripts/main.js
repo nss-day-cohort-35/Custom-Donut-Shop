@@ -1,5 +1,7 @@
 import Dropdown from "./dropdown.js"
+import donutInfo from "./donutAPI.js"
 import createNewDonut from "./donut.js"
+import addDonutToDOM from "./donutDOM.js"
 
 Dropdown.makeTypesDropDown();
 Dropdown.makeFlavorsDropDown();
