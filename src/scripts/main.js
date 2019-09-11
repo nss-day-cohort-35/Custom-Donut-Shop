@@ -1,15 +1,71 @@
-import API from "./DataManager.js"
-
-// make a dropdown of items from the API
-const makeTypesDropDown = () => {
-    API.getTypes().then(allTypes => {
-        // do I use makeElement and appendChild?
-        // or innerHTML?
-        allTypes.forEach(type => {
-
-        })
-    })
-}
+const types = [
+    {
+        id: 1,
+        name: "yeast"
+    },
+    {
+        id: 2,
+        name: "cake"
+    },
+    {
+        id: 3,
+        name: "cronut"
+    }
+]
+const flavors = [
+    {
+        id: 1,
+        name: "chocolate"
+    },
+    {
+        id: 2,
+        name: "plain"
+    },
+    {
+        id: 3,
+        name: "blueberry"
+    }
+]
+const glazes = [
+    {
+        id: 1,
+        name: "chocolate"
+    },
+    {
+        id: 2,
+        name: "cookies and cream"
+    },
+    {
+        id: 3,
+        name: "sugar"
+    },
+    {
+        id: 4,
+        name: "strawberry"
+    },
+    {
+        id: 5,
+        name: "maple"
+    }
+]
+const toppings = [
+    {
+        id: 1,
+        name: "rainbow sprinkles"
+    },
+    {
+        id: 2,
+        name: "chocolate sprinkles"
+    },
+    {
+        id: 3,
+        name: "brownie bits"
+    },
+    {
+        id: 4,
+        name: "oreo crumbles"
+    }
+]
 
 // Function that builds the donut
 const createNewDonut = (name, type, flavor, glaze, topping) => {
@@ -42,7 +98,7 @@ const makeDonutHTMLComponent = (donut) => {
 
 // Function that adds donut HTML components to the DOM
 const addDonutToDOM = (donutObj) => {
-    document.querySelector(".donut-container").innerHTML += makeDonutHTMLComponent(donutObj)
+    document.querySelectorAll(".donut-container")[1].innerHTML += makeDonutHTMLComponent(donutObj)
 }
 
 addDonutToDOM(createNewDonut("This da best donut", types[2], flavors[0], glazes[4], toppings[1]))
