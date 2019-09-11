@@ -1,5 +1,8 @@
 import API from "./DataManager.js"
 
+/*
+    dropdown.js is in charge of creating an populating the dropdowns for our donuts
+*/
 const dropdown = {
     makeTypesDropDown: () => {
         API.getTypes().then(allTypes => {

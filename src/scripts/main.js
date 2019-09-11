@@ -11,12 +11,15 @@ Dropdown.makeFlavorsDropDown();
 Dropdown.makeGlazesDropDown();
 Dropdown.makeToppingsDropDown();
 
+// This makes sure we have donuts when the page loads!
 API.getDonuts().then((allDonuts) => {
     allDonuts.forEach(donut => {
         addDonutToDOM(donut)
     })
 })
 
+
+// Event listener for the 'create new donut' button
 document.querySelector("#donut-btn").addEventListener("click", () => {
 
 
@@ -35,6 +38,7 @@ document.querySelector("#donut-btn").addEventListener("click", () => {
 
     // 3. maybe clear inputs?
     document.querySelector("#name-input").value = "";
+
     // 4. clear donut-container before adding new donut
     document.querySelector("#donut-results").innerHTML = "";
 
@@ -46,7 +50,6 @@ document.querySelector("#donut-btn").addEventListener("click", () => {
         API.getDonuts().then((allDonuts) => {
             allDonuts.forEach(donut => {
                 // 7. needs to send donut to DOM
-
                 addDonutToDOM(donut)
             })
         })
