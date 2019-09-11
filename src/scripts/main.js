@@ -3,10 +3,15 @@ import donutInfo from "./donutAPI.js"
 import createNewDonut from "./donut.js"
 import addDonutToDOM from "./donutDOM.js"
 
+/*
+    Make and populate dropdowns with API info when main.js is seen by browser
+*/
 Dropdown.makeTypesDropDown();
 Dropdown.makeFlavorsDropDown();
 Dropdown.makeGlazesDropDown();
 Dropdown.makeToppingsDropDown();
+
+
 
 addDonutToDOM(createNewDonut("This da best donut", donutInfo.types[2], donutInfo.flavors[0], donutInfo.glazes[4], donutInfo.toppings[1]))
 
