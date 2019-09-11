@@ -2,6 +2,7 @@ import Dropdown from "./dropdown.js"
 import donutInfo from "./donutAPI.js"
 import createNewDonut from "./donut.js"
 import addDonutToDOM from "./donutDOM.js"
+import API from "./DataManager.js";
 
 /*
     Make and populate dropdowns with API info when main.js is seen by browser
@@ -11,12 +12,18 @@ Dropdown.makeFlavorsDropDown();
 Dropdown.makeGlazesDropDown();
 Dropdown.makeToppingsDropDown();
 
+// Add event listener to donut-btn
+document.querySelector("#donut-btn").addEventListener("click", () => {
+    // get values of all dropdowns and store them in variables to use for later
+    const name = document.getElementById("name-input").value
+    const type = document.getElementById("type-dropdown").value
+    const flavor = document.getElementById("flavor-dropdown").value
+    const glaze = document.getElementById("glaze-dropdown").value
+    const topping = document.getElementById("topping-dropdown").value
 
+    // IT'S LATER! Make our donut!
+    const newDonut = createNewDonut(name, type, flavor, glaze, topping)
 
-addDonutToDOM(createNewDonut("This da best donut", donutInfo.types[2], donutInfo.flavors[0], donutInfo.glazes[4], donutInfo.toppings[1]))
-
-addDonutToDOM(createNewDonut("Only Okay", donutInfo.types[1], donutInfo.flavors[0], donutInfo.glazes[0], donutInfo.toppings[1]))
-
-addDonutToDOM(createNewDonut("DELICIOUS", donutInfo.types[0], donutInfo.flavors[0], donutInfo.glazes[0], donutInfo.toppings[0]))
-
-addDonutToDOM(createNewDonut("DA 💣", donutInfo.types[2], donutInfo.flavors[2], donutInfo.glazes[1], donutInfo.toppings[0]))
+    // Now send that bad boy to the DB!
+    API.createDonut(newDonut);
+})

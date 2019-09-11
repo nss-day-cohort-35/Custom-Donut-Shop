@@ -2,10 +2,10 @@
 const createNewDonut = (name, type, flavor, glaze, topping) => {
     const newDonut = {
         name: name,
-        type: type.name,
-        flavor: flavor.name,
-        glaze: glaze.name,
-        topping: topping.name
+        type: type,
+        flavor: flavor,
+        glaze: glaze,
+        topping: topping
     }
     return newDonut
 }

@@ -16,9 +16,11 @@ body {
 }
 .dropdown {
     width: 20%;
+    margin: .2rem;
 }
 #donut-btn {
     width: 20%;
+    margin: .2rem;
 }
 
 .donut {
