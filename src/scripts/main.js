@@ -98,7 +98,7 @@ const makeDonutHTMLComponent = (donut) => {
 
 // Function that adds donut HTML components to the DOM
 const addDonutToDOM = (donutObj) => {
-    document.querySelectorAll(".donut-container")[1].innerHTML += makeDonutHTMLComponent(donutObj)
+    document.querySelector(".donut-container").innerHTML += makeDonutHTMLComponent(donutObj)
 }
 
 addDonutToDOM(createNewDonut("This da best donut", types[2], flavors[0], glazes[4], toppings[1]))
