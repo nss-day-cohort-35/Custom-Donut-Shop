@@ -11,21 +11,21 @@
 <body>
     <h1>Grass and Cider's Custom Donut Bakery</h1>
     <h2>Order a Custom Donut:</h2>
-    <div class="donut-container">
-        <label for="donutName">Name your creation:</label>
-        <input class="dropdown" id="name-input"></input>
-        <label for="types">Batter Type:</label>
+    <div class="donut--container">
+        <label for="name-input">Name your creation:</label>
+        <input class="dropdown" id="name-input">
+        <label for="type-dropdown">Batter Type:</label>
         <select class="dropdown" id="type-dropdown"></select>
-        <label for="flavors">Batter Flavor:</label>
+        <label for="flavor-dropdown">Batter Flavor:</label>
         <select class="dropdown" id="flavor-dropdown"></select>
-        <label for="glazes">Glaze:</label>
+        <label for="glaze-dropdown">Glaze:</label>
         <select class="dropdown" id="glaze-dropdown"></select>
-        <label for="toppings">Topping:</label>
+        <label for="topping-dropdown">Topping:</label>
         <select class="dropdown" id="topping-dropdown"></select>
         <button id="donut-btn">Create Custom Donut</button>
     </div>
     <h2>Recent Donut 🍩rders:</h2>
-    <div class="donut-container" id="donut-results">
+    <div class="donut--container" id="donut-results">
     </div>
 
     <script type="module" src="./scripts/main.js"></script>
