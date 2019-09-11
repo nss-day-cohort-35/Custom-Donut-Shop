@@ -1,6 +1,10 @@
 import API from "./DataManager.js"
+import Dropdown from "./dropdown.js"
 
-
+Dropdown.makeTypesDropDown();
+Dropdown.makeFlavorsDropDown();
+Dropdown.makeGlazesDropDown();
+Dropdown.makeToppingsDropDown();
 
 // Function that builds the donut
 const createNewDonut = (name, type, flavor, glaze, topping) => {
