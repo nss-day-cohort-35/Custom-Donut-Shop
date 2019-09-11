@@ -14,19 +14,6 @@ const API = {
     getToppings: () => {
         return fetch("http://localhost:8088/toppings")
             .then(response => response.json())
-    },
-    getDonuts: () => {
-        return fetch("http://localhost:8088/donuts")
-            .then(response => response.json())
-    },
-    createDonut: (donutObj) => {
-        return fetch("http://localhost:8088/donuts", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(donutObj)
-        })
     }
 }
 
