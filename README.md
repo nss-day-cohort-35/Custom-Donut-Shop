@@ -1,6 +1,6 @@
 # Cohort 35's Custom Donut Shop
 
-# What is it?
+## What is it?
 The custom donut shop web app was made to reinforce ES6 modules and making GET requests to an API, as well as introducing the use of factory functions and the POST method for an API.
 
 ## Where is all the code?
