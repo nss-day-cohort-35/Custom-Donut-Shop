@@ -25,5 +25,21 @@ document.querySelector("#donut-btn").addEventListener("click", () => {
     const newDonut = createNewDonut(name, type, flavor, glaze, topping)
 
     // Now send that bad boy to the DB!
-    API.createDonut(newDonut);
+    API.createDonut(newDonut).then(() => {
+        document.querySelectorAll(".donut-container")[1].innerHTML = "";
+        API.getDonuts().then(allDonuts => {
+            allDonuts.forEach(donut => {
+                addDonutToDOM(donut);
+            })
+        })
+    })
+})
+
+/*
+    We need all the donuts from our json when the page loads!
+*/
+API.getDonuts().then(allDonuts => {
+    allDonuts.forEach(donut => {
+        addDonutToDOM(donut);
+    })
 })

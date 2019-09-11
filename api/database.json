@@ -2,16 +2,24 @@
   "donuts": [
     {
       "name": "My First Donut",
+      "type": "yeast",
+      "flavor": "plain",
+      "glaze": "chocolate",
+      "topping": "rainbow sprinkles",
       "id": 1
     },
     {
-      "name": "My Second? Donut",
+      "name": "My FAVORITE Donut",
+      "type": "cronut",
+      "flavor": "plain",
+      "glaze": "cookies and cream",
+      "topping": "oreo crumbles",
       "id": 2
     },
     {
-      "name": "New Donut",
+      "name": "My Third Donut",
       "type": "yeast",
-      "flavor": "plain",
+      "flavor": "chocolate",
       "glaze": "chocolate",
       "topping": "rainbow sprinkles",
       "id": 3
