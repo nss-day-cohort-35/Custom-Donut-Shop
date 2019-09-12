@@ -5,7 +5,7 @@ import donutHMTL from "./donutHTML.js"
 */
 
 const donutDOMBuilder = (donutObj) => {
-    document.querySelector(".donut--container").innerHTML += donutHMTL(donutObj)
+    document.querySelector("#donut-results").innerHTML += donutHMTL(donutObj)
 }
 
 export default donutDOMBuilder
