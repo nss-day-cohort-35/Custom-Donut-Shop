@@ -1,22 +1,6 @@
 {
   "donuts": [
     {
-      "name": "My First Donut",
-      "type": "yeast",
-      "flavor": "plain",
-      "glaze": "chocolate",
-      "topping": "rainbow sprinkles",
-      "id": 1
-    },
-    {
-      "name": "My FAVORITE Donut",
-      "type": "cronut",
-      "flavor": "plain",
-      "glaze": "cookies and cream",
-      "topping": "oreo crumbles",
-      "id": 2
-    },
-    {
       "name": "My Third Donut",
       "type": "yeast",
       "flavor": "chocolate",
@@ -33,36 +17,12 @@
       "id": 4
     },
     {
-      "name": "Da 💣",
-      "type": "cronut",
-      "flavor": "chocolate",
-      "glaze": "chocolate",
-      "topping": "brownie bits",
-      "id": 5
-    },
-    {
-      "name": "Da 💣",
-      "type": "cronut",
-      "flavor": "chocolate",
-      "glaze": "chocolate",
-      "topping": "brownie bits",
-      "id": 6
-    },
-    {
-      "name": "No refresh pls",
-      "type": "cronut",
-      "flavor": "chocolate",
-      "glaze": "cookies and cream",
-      "topping": "oreo crumbles",
-      "id": 7
-    },
-    {
-      "name": "New Donut",
-      "type": "cronut",
-      "flavor": "strawberry",
+      "name": "crazy donut",
+      "type": "cake",
+      "flavor": "plain",
       "glaze": "sugar",
       "topping": "chocolate sprinkles",
-      "id": 8
+      "id": 9
     }
   ],
   "types": [

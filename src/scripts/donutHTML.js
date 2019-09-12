@@ -1,6 +1,6 @@
 // Function that defines what a donut should look like in HTML
-const makeDonutHTMLComponent = (donut) => {
-    return `
+const makeDonutHTMLComponent = donut => {
+	return `
     <div class="donut">
         <h3>${donut.name}</h3>
         <h4>Type:</h4>
@@ -11,8 +11,9 @@ const makeDonutHTMLComponent = (donut) => {
         <p>${donut.glaze}</p>
         <h4>Toppings:</h4>
         <p>${donut.topping}</p>
+        <button type="button" id="deleteDonut--${donut.id}">DELETE ME</button>
     </div>
-    `
-}
+    `;
+};
 
-export default makeDonutHTMLComponent
+export default makeDonutHTMLComponent;
