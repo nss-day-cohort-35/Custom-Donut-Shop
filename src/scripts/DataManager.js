@@ -30,8 +30,30 @@ const API = {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(tacoDonut)
-        })
+        }).then(response => response.json())
+    },
+    deleteDonut: (id) => {
+        return fetch(`http://localhost:8088/donuts/${id}`, {
+            method: "DELETE"
+            }).then(response => response.json())
+    },
+    editDonut: () => {
+
+    },
+    getSingle: (donutId) => {
+       return fetch(`http://localhost:8088/donuts/${donutId}`)
+            .then(response => response.json())
     }
 }
 
 export default API
+
+
+
+
+
+
+
+
+
+
