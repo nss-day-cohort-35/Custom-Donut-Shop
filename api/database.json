@@ -1,100 +1,71 @@
 {
-  "donuts": [
-    {
-      "name": "My Third Donut",
-      "type": "yeast",
-      "flavor": "chocolate",
-      "glaze": "chocolate",
-      "topping": "rainbow sprinkles",
-      "id": 3
-    },
-    {
-      "name": "Baby's first donut",
-      "type": "cake",
-      "flavor": "strawberry",
-      "glaze": "strawberry",
-      "topping": "brownie bits",
-      "id": 4
-    },
-    {
-      "name": "crazy donut",
-      "type": "cake",
-      "flavor": "plain",
-      "glaze": "sugar",
-      "topping": "chocolate sprinkles",
-      "id": 9
-    }
-  ],
-  "types": [
-    {
-      "id": 1,
-      "name": "yeast"
-    },
-    {
-      "id": 2,
-      "name": "cake"
-    },
-    {
-      "id": 5,
-      "name": "cronut"
-    }
-  ],
-  "flavors": [
-    {
-      "id": 1,
-      "name": "chocolate"
-    },
-    {
-      "id": 2,
-      "name": "plain"
-    },
-    {
-      "id": 3,
-      "name": "blueberry"
-    },
-    {
-      "id": 4,
-      "name": "strawberry"
-    }
-  ],
-  "glazes": [
-    {
-      "id": 1,
-      "name": "chocolate"
-    },
-    {
-      "id": 2,
-      "name": "cookies and cream"
-    },
-    {
-      "id": 3,
-      "name": "sugar"
-    },
-    {
-      "id": 4,
-      "name": "strawberry"
-    },
-    {
-      "id": 5,
-      "name": "maple"
-    }
-  ],
-  "toppings": [
-    {
-      "id": 1,
-      "name": "rainbow sprinkles"
-    },
-    {
-      "id": 2,
-      "name": "chocolate sprinkles"
-    },
-    {
-      "id": 3,
-      "name": "brownie bits"
-    },
-    {
-      "id": 4,
-      "name": "oreo crumbles"
-    }
-  ]
+    "donuts": [],
+    "types": [
+        {
+            "id": 1,
+            "name": "yeast"
+        },
+        {
+            "id": 2,
+            "name": "cake"
+        },
+        {
+            "id": 3,
+            "name": "cronut"
+        }
+    ],
+    "flavors": [
+        {
+            "id": 1,
+            "name": "chocolate"
+        },
+        {
+            "id": 2,
+            "name": "plain"
+        },
+        {
+            "id": 3,
+            "name": "blueberry"
+        }
+    ],
+    "glazes": [
+        {
+            "id": 1,
+            "name": "chocolate"
+        },
+        {
+            "id": 2,
+            "name": "cookies and cream"
+        },
+        {
+            "id": 3,
+            "name": "sugar"
+        },
+        {
+            "id": 4,
+            "name": "strawberry"
+        },
+        {
+            "id": 5,
+            "name": "maple"
+        }
+    ],
+    "toppings": [
+        {
+            "id": 1,
+            "name": "rainbow sprinkles"
+        },
+        {
+            "id": 2,
+            "name": "chocolate sprinkles"
+        },
+        {
+            "id": 3,
+            "name": "brownie bits"
+        },
+        {
+            "id": 4,
+            "name": "oreo crumbles"
+        }
+    ]
 }
