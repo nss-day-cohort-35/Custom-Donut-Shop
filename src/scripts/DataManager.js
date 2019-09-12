@@ -37,8 +37,17 @@ const API = {
             method: "DELETE"
             }).then(response => response.json())
     },
-    editDonut: () => {
-
+    editDonut: (id) => {
+        const donutUpdateObject = {
+            name: document.querySelector("#donutName").value
+        }
+        return fetch(`http://localhost:8088/donuts/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(donutUpdateObject)
+        }).then(response => response.json())
     },
     getSingle: (donutId) => {
        return fetch(`http://localhost:8088/donuts/${donutId}`)

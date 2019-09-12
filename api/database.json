@@ -1,7 +1,7 @@
 {
   "donuts": [
     {
-      "name": "My FAVORITE Donut",
+      "name": "My FAVORITEs Donut More",
       "type": "cronut",
       "flavor": "plain",
       "glaze": "cookies and cream",
@@ -17,12 +17,20 @@
       "id": 3
     },
     {
-      "name": "Sunny ",
+      "name": "Sunny Days and Rainbows",
       "type": "yeast",
       "flavor": "chocolate",
       "glaze": "chocolate",
       "topping": "rainbow sprinkles",
       "id": 4
+    },
+    {
+      "name": "Yes",
+      "type": "yeast",
+      "flavor": "chocolate",
+      "glaze": "chocolate",
+      "topping": "rainbow sprinkles",
+      "id": 5
     }
   ],
   "types": [

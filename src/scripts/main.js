@@ -63,24 +63,39 @@ Listen for delete buttons and then get the id value of the donut from the button
 */
 const resultsContainer = document.querySelector("#donutResults").addEventListener("click", (event) => {
     if (event.target.id.startsWith("deleteDonut--")) {
-         // Extract donut id from the button's id attribute
+        // Extract donut id from the button's id attribute
         console.log(event, event.target.id.split("--")[1])
         document.querySelector("#donutResults").innerHTML = "";
         API.deleteDonut(event.target.id.split("--")[1])
-        .then(response => {
-            // 4. clear donut-container before adding new donut
-            // 6. get all the donuts again
-            API.getDonuts().then((allDonuts) => {
-                allDonuts.forEach(donut => {
-                    // 7. needs to send donut to DOM
-                    addDonutToDOM(donut)
+            .then(response => {
+                // 4. clear donut-container before adding new donut
+                // 6. get all the donuts again
+                API.getDonuts().then((allDonuts) => {
+                    allDonuts.forEach(donut => {
+                        // 7. needs to send donut to DOM
+                        addDonutToDOM(donut)
+                    })
                 })
             })
-        })
-    }else if (event.target.id.startsWith("editDonut")){
+    } else if (event.target.id.startsWith("editDonut")) {
         console.log("edit", event.target.id.split("--")[1])
         editForm(event.target.id.split("--")[1])
     }
+})
+
+document.querySelector("#saveDonut").addEventListener("click", (event) => {
+    API.editDonut(document.querySelector("#donutId").value)
+    .then(response => {
+        console.log("response", response);
+        document.querySelector("#donutName").value = "";
+        document.querySelector("#donutResults").innerHTML = "";
+        API.getDonuts().then((allDonuts) => {
+            allDonuts.forEach(donut => {
+                // 7. needs to send donut to DOM
+                addDonutToDOM(donut)
+            })
+        })
+    })
 })
 
 
