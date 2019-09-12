@@ -1,2 +1,8 @@
 notes.txt
+
+*.json
+/api
+api/
+
 .DS_Store
+
